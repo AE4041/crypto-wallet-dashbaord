@@ -1,0 +1,19 @@
+.p-inputtext {
+    color: #ececec;
+    background: #16161E;
+    padding: 0.7rem 0.75rem;
+    border: 1px solid #3a3a3a56;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+        box-shadow 0.2s;
+    appearance: none;
+}
+
+.p-inputtext:enabled:hover {
+    border-color: #858585;
+}
+
+.p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    border-color: #858585;
+}

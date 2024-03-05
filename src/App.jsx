@@ -1,8 +1,11 @@
-import { CirclesFour } from "@phosphor-icons/react"
+import Login from "./pages/Auth/Login"
+import Signup from "./pages/Auth/Signup"
+import SideBar from "./layout/Sidebar/Sidebar"
 
 const App = () => {
-
-  return <h1>Hello</h1>
+  return (
+    <Signup/>
+  )
 }
 
 export default App
