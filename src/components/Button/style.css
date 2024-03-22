@@ -3,6 +3,20 @@
     --gradient-b: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(15, 139, 177) 0%, rgb(96, 35, 177) 100%);
 }
 
+.button {
+    border: none;
+    padding: 0.75rem 1.50rem;
+    font-size: 14px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.button:hover {
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+        box-shadow 0.2s;
+    top: 0.2rem;
+}
+
 .p-button {
     color: #fff;
     background: var(--gradient-a);
@@ -26,4 +40,10 @@
     background: var(--gradient-b);
     color: #fff;
     top: 0.2rem;
+}
+
+.btn-mask {
+    background: rgba(43, 43, 43, 1);
+    text-align: center;
+    font-weight: bold;
 }

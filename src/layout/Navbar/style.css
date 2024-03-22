@@ -1,0 +1,25 @@
+.header {
+    background: rgba(255, 255, 255, 0.021);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    z-index: 100;
+}
+
+.header-container {
+    height: 3.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        left: 200px;
+        padding: 0 3rem 0 6rem;
+        width: calc(100% - 200px);
+        display: none;
+        visibility: hidden;
+    }
+
+    .header__toggle {
+        display: none;
+        visibility: hidden;
+    }
+}

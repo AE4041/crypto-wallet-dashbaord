@@ -91,6 +91,16 @@
   --bluegray-700: #465161;
   --bluegray-800: #37404c;
   --bluegray-900: #282e38;
+  --gray-50: #f1f4f6;
+  --gray-100: #e2e8ee;
+  --gray-200: #c6d1dd;
+  --gray-300: #a9bbcb;
+  --gray-400: #8da4ba;
+  --gray-500: #708da9;
+  --gray-600: #5a7187;
+  --gray-700: #435565;
+  --gray-800: #18191a;
+  --gray-900: #0d0d0e;
   --purple-50: #fbf7ff;
   --purple-100: #ead6fd;
   --purple-200: #dab6fc;
@@ -132,13 +142,15 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   background-image: url("./assets/bg.png");
-  background-size:  cover;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-repeat: round;
+  position: relative;
 }
 
 img,
@@ -155,4 +167,20 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.layout-wrapper {
+  left: 200px;
+  width: calc(100% - 200px);
+  transition: all 0.3s ease;
+}
+
+.bg-blur {
+  background: rgba(21, 20, 24, 0.726);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.bg-blur-50 {
+  background: rgba(176, 176, 176, 0.192);
 }

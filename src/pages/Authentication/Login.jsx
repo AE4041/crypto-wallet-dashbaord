@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 import Logo from "../../assets/img/Logo.png"
 import ServerImage from "../../assets/img/Server3.png"
 import Button from "../../components/Button/Button"
@@ -6,6 +7,7 @@ import InputText from "../../components/InputText/InputText"
 
 
 const Login = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState('')
     const [passowrd, setPassword] = useState('')
 
@@ -45,7 +47,7 @@ const Login = () => {
                     <p className="font-medium text-bluegray-300 text-xs">Don't have an account? {passowrd}</p>
                 </div>
                 <div className="flex px-4 mt-3">
-                    <Button label="Sign in" className="font-medium" />
+                    <Button label="Sign in" className="font-medium" onClick={() => navigate('/dashboard')} />
                 </div>
             </div>
         </div>
