@@ -10,7 +10,7 @@ const Login = () => {
     const [passowrd, setPassword] = useState('')
 
     return (
-        <div className="flex w-full h-full" style={{ background: "#0B0B0F" }}  >
+        <div className="flex w-full h-full" style={{ background: "#03030f" }}  >
             <div className="flex justify-content-center h-screen ">
                 <img className="fadein animation-duration-1000 hidden md:block" src={ServerImage} alt="" />
             </div>
