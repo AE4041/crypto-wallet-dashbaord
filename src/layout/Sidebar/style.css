@@ -1,6 +1,7 @@
 .sidebar {
     position: fixed;
     left: -100%;
+    top: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;

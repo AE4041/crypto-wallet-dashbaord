@@ -17,12 +17,12 @@ const DashboardRoutes = () => {
     }, [hideSidebar])
 
     return (
-        <div className="flex flex-column w-full h-screen">
+        <div className="w-full">
             <Sidebar close={hideSidebar} />
 
-            <div className="flex-1 flex flex-column ralative md:absolute lg:absolute xl:absolute top-0 layout-wrapper ">
+            <div className="main-container-wrapper">
                 <Navbar closeState={hideSidebar} closeHandler={setHideSidebar} />
-                <div className="flex flex-column relative botom-auto w-full mt-6 mb-7">
+                <div className="flex-1 mt-6 mb-5">
                     <StrictRoutes />
                 </div>
             </div>

@@ -15,9 +15,9 @@ const Dashboard = () => {
     }, [])
 
     return (
-        <div className="flex flex-column gap-4 fadein animation-duration-1000 px-4 mt-5 md:mt-2 lg:mt-2">
-            <div className="grid gap-5 w-12 mx-auto">
-                <div className="col">
+        <div className="flex flex-column gap-4 mt-5 md:mt-2 lg:mt-2 fadein animation-duration-1000">
+            <div className="flex-1 flex flex-column md:flex-row lg:flex-row xl:flex-row gap-4 md:gap-0 lg:gap-0 w-full mx-auto">
+                <div className="flex-1 px-3">
                     <div className="flex flex-column gap-7 bg-blur p-5 border-round-xl">
                         <div className="flex flex-column text-gray-50 md:flex-row lg:flex-row gap-8 justify-content-start">
                             {renderInfoBlock(Money, "Total assets", "$ 87.743")}

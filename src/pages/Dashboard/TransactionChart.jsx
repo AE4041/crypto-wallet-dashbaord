@@ -55,7 +55,11 @@ export const options = {
 
 
 const TransactionChart = () => {
-    return <Line options={options} data={data} />;
+    return (
+        <div className="w-full">
+            <Line options={options} data={data} />
+        </div>
+    )
 }
 
 export default TransactionChart
