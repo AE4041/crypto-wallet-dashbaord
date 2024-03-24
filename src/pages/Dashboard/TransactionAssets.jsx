@@ -10,7 +10,7 @@ import UserGroup from "../../assets/frames/users.png"
 
 const TransactionAssets = () => {
     return (
-        <div className="col md:col-12 lg:col-3 xl:col-3 flex flex-column gap-4 ">
+        <div className="flex flex-column gap-4 px-3 w-full md:w-4 lg:w-4 ">
             <div className="flex flex-column gap-3 px-3 py-4 border-round-xl bg-blur">
                 <h4 className="text-white">Assets</h4>
                 <div className="flex flex-column gap-3">

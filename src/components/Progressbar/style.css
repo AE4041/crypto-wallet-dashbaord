@@ -20,18 +20,18 @@
 
 .progress-moved .progress-bar {
     width: 85%;
-    background: #ef476f;
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(15, 139, 177) 0%, rgb(96, 35, 177) 100%);
     animation: progressAnimation 6s;
 }
 
 @keyframes progressAnimation {
     0% {
         width: 0%;
-        background: #f9bcca;
+        background: #bcd4f9;
     }
 
     100% {
         width: 85%;
-        background: #ef476f;
+        background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(24, 200, 255, 1) 0%, rgba(147, 63, 254, 1) 100%);
     }
 }
