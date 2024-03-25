@@ -19,7 +19,7 @@ const Dashboard = () => {
             <div className="flex-1 flex flex-column md:flex-row lg:flex-row xl:flex-row gap-4 md:gap-0 lg:gap-0 w-full mx-auto">
                 <div className="flex-1 px-3">
                     <div className="flex flex-column gap-7 bg-blur p-5 border-round-xl">
-                        <div className="flex flex-column text-gray-50 md:flex-row lg:flex-row gap-8 justify-content-start">
+                        <div className="grid text-gray-50 gap-2">
                             {renderInfoBlock(Money, "Total assets")}
                             {renderInfoBlock(Wallet, "Total deposits")}
                             {renderInfoBlock(AlignBottom, "APY")}
@@ -51,7 +51,7 @@ const Dashboard = () => {
 }
 
 const renderInfoBlock = (IconComponent, label) => (
-    <div className="flex align-items-center gap-2">
+    <div className="col flex align-items-center gap-2">
         <div className="bg-blur-50 p-3 border-round-lg">
             <IconComponent size={25} />
         </div>
