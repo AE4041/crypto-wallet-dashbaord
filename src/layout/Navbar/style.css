@@ -1,7 +1,7 @@
 .header {
-    background: rgba(255, 255, 255, 0.021);
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur(7.5px);
+    background: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 100;
 }
 
@@ -9,11 +9,19 @@
     height: 3.5rem;
 }
 
+.profile-name {
+    display: none;
+    visibility: hidden;
+}
+
 @media screen and (min-width: 768px) {
     .header {
         left: 200px;
         padding: 0 3rem 0 6rem;
         width: calc(100% - 200px);
+    }
+
+    .header-brand {
         display: none;
         visibility: hidden;
     }
@@ -21,5 +29,10 @@
     .header__toggle {
         display: none;
         visibility: hidden;
+    }
+
+    .profile-name {
+        display: inline-flex;
+        visibility: visible;
     }
 }

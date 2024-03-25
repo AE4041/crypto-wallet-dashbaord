@@ -1,3 +1,4 @@
+import { faker } from "@faker-js/faker"
 import ProgresssBar from "../../components/Progressbar/ProgressBar"
 import Bitcoin from "../../assets/frames/bitcoin.png"
 import Shibar from "../../assets/frames/shibar.png"
@@ -17,27 +18,22 @@ const TransactionAssets = () => {
                     <AssetItem
                         icon={Bitcoin}
                         name="Bitcoin"
-                        amount="$ 78,342"
                     />
                     <AssetItem
                         icon={Etherum}
                         name="Etherum"
-                        amount="$ 78,342"
                     />
                     <AssetItem
                         icon={Shibar}
                         name="Shibar"
-                        amount="$ 78,342"
                     />
                     <AssetItem
                         icon={Solana}
                         name="Solana"
-                        amount="$ 78,342"
                     />
                     <AssetItem
                         icon={Tether}
                         name="Tether"
-                        amount="$ 78,342"
                     />
                 </div>
                 <Button className="btn-mask border-round-xl text-center text-white" label="View All" />
@@ -58,7 +54,11 @@ const TransactionAssets = () => {
 
 
 
-const AssetItem = ({ icon, name, amount }) => {
+const AssetItem = ({ icon, name }) => {
+    const amount = faker.finance.amount({ min: 400, max: 1000, dec: 2, symbol: '$', autoFormat: true })
+    const amount2 = faker.finance.amount({ min: 340, max: 990, dec: 2, symbol: '$', autoFormat: true })
+
+
     return (
         <div className="flex flex-column gap-2">
             <div className="flex gap-2 align-items-center">
@@ -73,7 +73,7 @@ const AssetItem = ({ icon, name, amount }) => {
                     <ProgresssBar className="w-full" />
                 </div>
                 <div className="w-5 ml-auto">
-                    <p className="font-medium text-xs  text-white text-right">{amount}</p>
+                    <p className="font-medium text-xs  text-white text-right">{amount2}</p>
                 </div>
             </div>
         </div>
